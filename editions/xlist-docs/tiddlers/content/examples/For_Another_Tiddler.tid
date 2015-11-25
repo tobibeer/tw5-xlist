@@ -1,0 +1,29 @@
+created: 20150114110656867
+modified: 20150116114232521
+summary: showing ''xlist'' for a ''tiddler'' other than the currently viewed one
+tags: Examples filter groups
+title: For Another Tiddler
+
+To apply it to another tiddler, wrap the ''xlist'' macro with the [[TiddlerWidget|http://tiddlywiki.com/#TiddlerWidget]], e.g.:
+
+```
+<$tiddler tiddler="Business">
+<<xlist>>
+</$tiddler>
+```
+
+> <$tiddler tiddler="Business"><<xlist>></$tiddler>
+
+```
+''categories'': {{Business!!list}}
+```
+
+> ''categories'': {{Business!!list}}
+
+Here's the equivalent using both the [[filter]] and the [[groups]] parameter...
+
+```
+<<xlist filter:"[tag[Business]]" groups:"[list[Business]]">>
+```
+
+> <<xlist filter:"[tag[Business]]" groups:"[list[Business]]">>

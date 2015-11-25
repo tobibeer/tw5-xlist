@@ -1,0 +1,25 @@
+created: 20150116021156113
+creator: Tobias Beer
+default: `<dd><$link><$view field=title/></$link></dd>`
+modified: 20151124102636524
+modifier: Tobias Beer
+summary: a template applied to each matching item
+tags: Parameters
+title: template
+type: text/vnd.tiddlywiki
+
+!! Template Variables
+
+The following variables are exposed to the item template:
+
+; `<<currentTiddler>>`
+: the currently displayed tiddler in the group
+; `<<currentGroup>>`
+: with tags — the title of the group tag
+: with [[each]] — a half baked filter expression
+:: evaluate `<<xlist-each-title>>` using the list widget to get the real title, e.g:<div>
+
+`<$list filter=<<xlist-each-title>>><$link><<currentTiddler>></$link></$list>`
+
+`<$list filter=<<xlist-each-title>> variable=currentGroup><<currentGroup>></$list>`
+</div>

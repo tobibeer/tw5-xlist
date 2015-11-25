@@ -1,0 +1,19 @@
+created: 20150120114358797
+modified: 20150204105535215
+summary: doesn't use ''xlist'', but a a useful complement
+tags: Examples
+title: Flat Publications List With Topics
+
+Based on [[list category items with categories @ filters|http://filters.tiddlyspot.com/#list%20category%20items%20with%20categories]], here is how you can iterate all [[Publications]] and have them list their [[Topics]] using a list item template [[$:/.tb/templates/flat-list]].
+
+```
+<$tiddler tiddler="Topics">
+<$list filter="[all[current]tagging[]tagging[]sort[title]]" variable="item" template="$:/.tb/templates/flat-list">
+</$tiddler>
+```
+
+<<<
+<$tiddler tiddler="Topics">
+<$list filter="[all[current]tagging[]tagging[]sort[title]]" variable="item" template="$:/.tb/templates/flat-list">
+</$tiddler>
+<<<

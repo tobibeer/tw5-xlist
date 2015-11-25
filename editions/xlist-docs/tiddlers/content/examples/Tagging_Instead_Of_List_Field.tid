@@ -1,0 +1,28 @@
+created: 20150114195810237
+modified: 20150116122003532
+summary: get category tags to group by from a [[groups]] filter expression
+tags: Examples groups filter
+title: Tagging Instead Of List Field
+
+If you don't want to use the standard ''list'' field or a [[custom list field|Custom Category List]], you can specify the [[groups]] parameter to use something like ''tagging'' instead.
+
+!! Example
+
+Groups categories for all [[Journals]] as tiddlers tagging to [[Topics]] sorted by title.
+
+```
+<<xlist filter:"[tag[Journals]]" groups:"[tag[Topics]sort[]]">>
+```
+
+> <<xlist filter:"[tag[Journals]]" groups:"[tag[Topics]sort[]]">>
+
+The equivalent using the tiddler widget...
+
+```
+<$tiddler tiddler=Journals>
+<<xlist groups:"[tag[Topics]sort[]]">>
+</$tiddler>
+```
+
+> <$tiddler tiddler=Journals><<xlist groups:"[tag[Topics]sort[]]">></$tiddler>
+

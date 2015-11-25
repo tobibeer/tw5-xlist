@@ -1,0 +1,7 @@
+title: $:/.tb/templates/tab/xlist/publication
+
+All [[published|Publications]] <$link to=<<currentTab>>><<currentTab>></$link> by [[Topics]]...
+
+<$tiddler tiddler=<<currentTab>>>
+<<xlist-published Topics>>
+</$tiddler>

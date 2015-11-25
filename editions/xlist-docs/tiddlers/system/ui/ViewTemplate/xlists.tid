@@ -1,0 +1,14 @@
+created: 20150114110444966
+creator: Tobias Beer
+list-after: $:/core/ui/ViewTemplate/body
+modified: 20151124165538361
+modifier: Tobias Beer
+tags: $:/tags/ViewTemplate
+title: $:/.tb/ui/ViewTemplate/xlists
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]tag[Publications]]">
+
+All <$link><$view field=title/></$link> by [[topic|Topics]]...
+<<xlist-published Topics>>
+</$list>

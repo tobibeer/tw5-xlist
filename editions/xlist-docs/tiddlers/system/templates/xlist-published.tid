@@ -1,0 +1,11 @@
+created: 20151124164739968
+creator: Tobias Beer
+modified: 20151124164753303
+modifier: Tobias Beer
+title: $:/.tb/templates/xlist-published
+type: text/vnd.tiddlywiki
+
+<dd>
+@@color:grey;<$view field="published" format="date" template="YYYY-0MM-0DD"/>@@
+<$link><$view field="title"/></$link>
+</dd>

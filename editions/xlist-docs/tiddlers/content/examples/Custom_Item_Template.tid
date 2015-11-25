@@ -1,0 +1,17 @@
+created: 20150114110809141
+modified: 20150116102706505
+summary: defining a custom [[template]] for each matching item
+tags: Examples template
+title: Custom Item Template
+
+Here is an example to list items with ''published'' dates:
+
+```
+<$tiddler tiddler=Business>
+<<xlist template:[[$:/.tb/templates/xlist-published]]>>
+</$tiddler>
+```
+
+> <$tiddler tiddler=Business><<xlist template:[[$:/.tb/templates/xlist-published]]>></$tiddler>
+
+The template <<source [[$:/.tb/templates/xlist-published]]>>

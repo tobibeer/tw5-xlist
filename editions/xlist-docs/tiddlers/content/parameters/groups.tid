@@ -1,0 +1,10 @@
+created: 20150116101535845
+creator: Tobias Beer
+default: `[list[]]` — take categories from the standard ''list'' field of the ''current tiddler''
+modified: 20151124102617121
+modifier: Tobias Beer
+summary: a filter defining category titles to group by
+tags: Parameters
+title: groups
+type: text/vnd.tiddlywiki
+

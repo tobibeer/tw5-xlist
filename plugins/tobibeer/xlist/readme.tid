@@ -1,0 +1,3 @@
+title: $:/plugins/tobibeer/xlist/readme
+
+Provides the macro `<<xlist>>`, which outputs cross tables for tiddlers.

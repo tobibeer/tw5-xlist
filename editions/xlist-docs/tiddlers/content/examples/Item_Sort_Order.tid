@@ -1,0 +1,22 @@
+created: 20150114110859878
+creator: Tobias Beer
+modified: 20151124164857882
+modifier: Tobias Beer
+summary: using the [[sort]] parameter to sort listed items
+tags: Examples sort template
+title: Item Sort Order
+type: text/vnd.tiddlywiki
+
+Define the [[sort]] parameter in the form of a [[filter|http://tiddlywiki.com/#FilterOperator%3A%20limit]]. The example below lists all tiddlers grouped by [[Publications]] for the topic [[Business]], sorted by the ''published'' field in descending order, thus newest first, using a custom [[template|Custom Item Template]].
+
+```
+<$tiddler tiddler=Business>
+<<xlist
+template:[[$:/.tb/templates/xlist-published]]
+sort:"[!sort[published]]">>
+</$tiddler>
+```
+
+> <$tiddler tiddler=Business><<xlist template:[[$:/.tb/templates/xlist-published]] sort:"[!sort[published]]">></$tiddler>
+
+Here's the template <<source "$:/.tb/templates/xlist-published">>

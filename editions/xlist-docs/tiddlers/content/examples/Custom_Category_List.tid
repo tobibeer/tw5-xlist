@@ -1,0 +1,17 @@
+created: 20150114210135777
+modified: 20150116120032762
+summary: use the [[groups]] parameter to read the categories from a custom list field
+tags: filter groups Examples
+title: Custom Category List
+
+The below example gets the categories from a list field called ''xlist'' at the tiddler [[Articles]].
+
+```
+''categories'': {{Articles!!xlist}}
+<<xlist filter:"[tag[Articles]]" groups:"[list[Articles!!xlist]]">>
+```
+
+<<<
+''categories'': {{Articles!!xlist}}
+<<xlist filter:"[tag[Articles]]" groups:"[list[Articles!!xlist]]">>
+<<<

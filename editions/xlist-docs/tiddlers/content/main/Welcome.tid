@@ -1,0 +1,32 @@
+created: 20150113092945651
+creator: Tobias Beer
+modified: 20151124124657101
+modifier: Tobias Beer
+title: Welcome
+type: text/vnd.tiddlywiki
+xlist: 
+
+The ''xlist'' macro crosslists tiddlers with relations to two categories. Imagine the following [[topic|Topics]] tags, [[publication|Publications]]-type tags, and then publications tagging to both:
+
+<table class="start">
+<tr>
+<th>[[Topics]]</th>
+<th>[[Publications]]</th>
+<th>[[By Topics|Topics]]</th>
+<th>[[By Publications|Publications]]</th>
+</tr>
+<tr>
+<td><<list-links filter:"[tag[Topics]sort[title]]">></td>
+<td><<list-links filter:"[tag[Publications]sort[title]]">></td>
+<td>{{By Topics}}</td>
+<td>{{By Publications}}</td>
+</tr>
+</table>
+
+The [[xlist macro|$:/plugins/tobibeer/xlist]] lists tiddlers grouped by one category while also matching another. For example, to list a [[publication|Publications]] in the group [[Business > Journals|Business]], tag it — as you instinctively would — with both the topic category and the publication category, thus [[Business]] and [[Journals]].
+
+A first [[example|Examples]]...
+
+`<<xlist filter:"[tag[Business]]" groups:"[tag[Publications]sort[]]">>`
+
+> <<xlist filter:"[tag[Business]]" groups:"[tag[Publications]sort[]]">>

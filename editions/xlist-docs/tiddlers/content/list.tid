@@ -1,0 +1,8 @@
+created: 20151124164516690
+creator: Tobias Beer
+modified: 20151124164543746
+modifier: Tobias Beer
+title: list
+type: text/vnd.tiddlywiki
+
+If no group filter is defined, the ''xlist'' macro groups titles by categories specified in the tiddler's list field.

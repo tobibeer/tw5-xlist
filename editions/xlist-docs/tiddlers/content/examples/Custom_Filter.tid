@@ -1,0 +1,30 @@
+created: 20150116104754279
+modified: 20150116121832534
+summary: constrain tiddlers to be listed to those matching a custom filter [[filter]]
+tags: Examples filter groups
+title: Custom Filter
+
+Instead of matching the current tiddler as a tag, you can define a [[filter]].
+
+Below, all [[Examples]] are listed, grouped by [[Parameters]] — as in the standard ''list'' field of [[Parameters]] — yet only those tagged [[sort]], i.e. showing how to use the [[sort]] parameter.
+
+```
+<$tiddler tiddler=Parameters>
+<<xlist filter:"[[Examples]tagging[]]-[!tag[sort]]">>
+</$tiddler>
+```
+
+<<<
+<$tiddler tiddler=Parameters>
+<<xlist filter:"[[Examples]tagging[]]-[!tag[sort]]">>
+</$tiddler>
+<<<
+
+Here's the equivalent using the [[groups]] parameter...
+
+```
+<<xlist filter:"[[Examples]tagging[]]-[!tag[sort]]"
+groups:"[list[Parameters]]">>
+```
+
+> <<xlist filter:"[[Examples]tagging[]]-[!tag[sort]]" groups:"[list[Parameters]]">>

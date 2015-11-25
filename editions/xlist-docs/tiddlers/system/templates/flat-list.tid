@@ -1,0 +1,8 @@
+title: $:/.tb/templates/flat-list
+
+<$tiddler tiddler=<<item>>>
+<$link><$view field=title/></$link>
+</$tiddler>
+<span style="float:right">
+<$list filter="[<item>tags[]] +[tag<currentTiddler>]" template="$:/core/ui/TagTemplate"/>
+</span><br>

@@ -1,0 +1,23 @@
+created: 20150114133737084
+list: filter groups template sort each link
+modified: 20150204103907044
+title: Parameters
+
+The following optional parameters can be specified for the ''xlist'' macro:
+
+<table class="td-top">
+<tr>
+<th>#</th>
+<th>Field</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+<$list filter="[list[]]">
+<tr>
+<td><<iterator>></td>
+<td><$link to=<<currentTiddler>>><$view field=title/></$link></td>
+<td>{{!!summary}}</td>
+<td>{{!!default}}</td>
+</tr>
+</$list>
+</table>

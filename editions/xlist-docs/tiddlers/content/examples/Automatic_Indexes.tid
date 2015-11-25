@@ -1,0 +1,20 @@
+created: 20150114111139018
+creator: Tobias Beer
+modified: 20151124165515145
+modifier: Tobias Beer
+summary: automatically show ''xlist'' in a custom ~ViewTemplate for index tiddlers matching a filter
+tags: Examples
+title: Automatic Indexes
+type: text/vnd.tiddlywiki
+
+Have a look at tiddler [[Journals]]. Really, open it and look at its text. Neither does it have a `list` field defined, nor does it come with any markup. So, what's going on?
+
+It implements a [[Conditional ViewTemplate Section|http://tb5.tiddlyspot.com/#Conditional%20ViewTemplate%20Section]] as [[explained in this post|https://groups.google.com/d/msg/tiddlywiki/EzypDKdUOFE/JPn7pP8FwqAJ]]...
+
+```
+{{Journals||$:/.tb/ui/ViewTemplate/xlists}}
+```
+
+> {{Journals||$:/.tb/ui/ViewTemplate/xlists}}
+
+Below, a [[Shortcut Macro]] is used in the template <<source [[$:/.tb/ui/ViewTemplate/xlists]]>>

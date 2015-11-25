@@ -1,0 +1,16 @@
+created: 20150114221826470
+modified: 20150115001031111
+summary: for a tabbed view see [[Publications]]
+tags: 
+title: By Publications
+
+<dl class="xlist">
+<$list filter="[tag[Publications]sort[]]">
+<dt><$link to=<<currentTiddler>>><$view field=title/></$link></dt>
+<$list filter="[tag[Topics]sort[]]" variable=topic>
+<$list filter="[tag<currentTiddler>]+[tag<topic>]+[limit[1]]">
+<dd><$link to=<<topic>>><$view tiddler=<<topic>> field=title/></$link></dd>
+</$list>
+</$list>
+</$list>
+</dl>

@@ -1,0 +1,27 @@
+created: 20150114114517108
+creator: Tobias Beer
+modified: 20151124165157973
+modifier: Tobias Beer
+summary: tabs of index tiddlers with grouped category lists
+tags: Examples
+title: Tabs Of Index Tiddlers
+type: text/vnd.tiddlywiki
+
+The following examples use the [[template]] parameter to define custom tab contents for the [[tabs macro|http://tiddlywiki.com/#TabsMacro]], each iterating category tiddlers tagging to them while showing a grouped category listing of the other.
+
+; [[Topics]]
+: topic tabs with items grouped by [[Publications]]
+: template: [[$:/.tb/templates/tab/xlist/topic]]
+; [[Publications]]
+: publication tabs with items grouped by [[Topics]]
+: template: [[$:/.tb/templates/tab/xlist/publication]]
+
+!! [[Topics]] Demo
+
+```
+{{Topics}}
+```
+
+> {{Topics}}
+
+How it is done for <<source Topics>>

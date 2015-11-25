@@ -1,0 +1,20 @@
+created: 20150114215506791
+creator: Tobias Beer
+modified: 20151124165100680
+modifier: Tobias Beer
+summary: define a shortcut macro to the specific parameters you wish to use
+tags: Examples template sort groups
+title: Shortcut Macro
+type: text/vnd.tiddlywiki
+
+Have a look at the text of the tiddler <<source "Business">>
+
+The below macro that it calls uses a [[groups]] filter via tagging, an item [[template]] and a custom [[sort]] parameter, see <<source [[$:/.tb/macros/xlist-published]]>>
+
+!! Demo
+
+```
+{{Business}}
+```
+
+> {{Business}}

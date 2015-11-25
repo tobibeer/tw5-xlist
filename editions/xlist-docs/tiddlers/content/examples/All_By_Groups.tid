@@ -1,0 +1,17 @@
+created: 20150116224920538
+modified: 20150117084747443
+summary: a simple grouped list for all tiddlers matching the group categories
+tags: filter groups Examples each
+title: All By Groups
+
+The following example lists all [[Publications]] by publication categories...
+
+`<<xlist filter:"[all[]]" groups:"[tag[Publications]sort[]]">>`
+
+> <<xlist filter:"[all[]]" groups:"[tag[Publications]sort[]]">>
+
+Same goes for grouping by the discrete values of a field, e.g. ''topic'':
+
+`<<xlist filter:"[all[]]" each:topic>>`
+
+> <<xlist filter:"[all[]]" each:topic>>

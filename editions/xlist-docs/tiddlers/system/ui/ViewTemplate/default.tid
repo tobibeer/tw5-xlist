@@ -1,0 +1,11 @@
+title: $:/.tb/ui/ViewTemplate/default
+tags: $:/tags/ViewTemplate
+summary: shows default values for parameters
+list-after: $:/.tb/ui/ViewTemplate/summary
+list-before: $:/core/ui/ViewTemplate/body
+
+<$list filter="[all[current]has[default]]">
+
+; default
+: {{!!default}}
+</$list>

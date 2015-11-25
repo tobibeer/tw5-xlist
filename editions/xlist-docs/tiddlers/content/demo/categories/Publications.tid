@@ -1,0 +1,11 @@
+created: 20150114112601560
+list: Articles Journals Whitepapers
+modified: 20150116103624003
+title: Publications
+xlist: Articles Journals Whitepapers
+
+<<tabs
+"[all[current]tagging[]]"
+default: "Articles"
+state: "$:/state/tabs/xlist/publication"
+template:[[$:/.tb/templates/tab/xlist/publication]]>>

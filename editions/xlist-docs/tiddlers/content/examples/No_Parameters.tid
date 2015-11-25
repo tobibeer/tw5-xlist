@@ -1,0 +1,24 @@
+created: 20150114110615893
+creator: Tobias Beer
+modified: 20151124100422030
+modifier: Tobias Beer
+summary: the ''xlist'' macro used without any [[Parameters]], see [[Economics]]
+tags: Examples
+title: No Parameters
+type: text/vnd.tiddlywiki
+
+```
+<$tiddler tiddler="Economics">
+<<xlist>>
+</$tiddler>
+```
+
+> {{Economics}}
+
+Reads the categories from the tiddler's list field, here from the tiddler [[Economics]]:
+
+```
+''categories'': {{Economics!!list}}
+```
+
+> ''categories'': {{Economics!!list}}

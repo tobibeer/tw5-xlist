@@ -1,0 +1,72 @@
+title: $:/plugins/tobibeer/xlist/macro
+tags: $:/tags/Macro
+
+\define xlist-groups-each()
+[has[$(each)$]each[$(each)$]sort[$(each)$]]
+\end
+
+\define xlist-group()
+{$(groupTiddler)$!!$(each)$}
+\end
+
+\define xlist-group-title()
+[title$(currentGroup)$]
+\end
+
+\define xlist-one()
+$(filter)$+[tag<currentGroup>]+[limit[1]]
+\end
+
+\define xlist-items()
+$(filter)$+[tag<currentGroup>]+$(sort)$
+\end
+
+\define xlist-group-one()
+$(filter)$+[field:$(each)$$(currentGroup)$]+[limit[1]]
+\end
+
+\define xlist-group-items()
+$(filter)$+[field:$(each)$$(currentGroup)$]+$(sort)$
+\end
+
+\define xlist(
+filter:"[all[current]tagging[]]",
+groups:"[list[]]",
+template,
+sort:"[sort[]]",
+each,
+link:"yes"
+)
+<$set name=filter value="$filter$">
+<$set name=sort value="$sort$">
+<$set name=each value="$each$">
+<dl class="xlist">
+<!--BY TAGS-->
+<$reveal type=match default="" text="$each$">
+<$list filter="$groups$" variable=currentGroup>
+<$list filter=<<xlist-one>> variable=none>
+<dt><$reveal type="match" default="$link$" text="yes"><$link to=<<currentGroup>>><$view tiddler=<<currentGroup>> field=title/></$link></$reveal><$reveal type="nomatch" default="$link$" text="yes"><$view tiddler=<<currentGroup>> field=title/></$reveal></dt>
+<$list filter=<<xlist-items>> template="$template$">
+<dd><$link><$view field=title/></$link></dd>
+</$list>
+</$list>
+</$list>
+</$reveal>
+<!--EACH FIELD-->
+<$reveal type=nomatch default="" text="$each$">
+<$list filter=<<xlist-groups-each>> variable=groupTiddler>
+<$set name=currentGroup value=<<xlist-group>>>
+<$list filter=<<xlist-group-one>> variable="none">
+<dt><$list filter=<<xlist-group-title>>><$reveal type="match" default="$link$" text="yes"><$link ><<currentTiddler>></$link></$reveal><$reveal type="nomatch" default="$link$" text="yes"><$view field=title/></$reveal></$list></dt>
+<$list filter=<<xlist-group-items>> template="$template$">
+<dd><$link><$view field=title/></$link></dd>
+</$list>
+</$list>
+</$set>
+</$list>
+</$reveal>
+</dl>
+</$set>
+</$set>
+</$set>
+\end

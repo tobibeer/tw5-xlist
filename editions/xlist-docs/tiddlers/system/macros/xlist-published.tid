@@ -1,0 +1,9 @@
+title: $:/.tb/macros/xlist-published
+tags: $:/tags/Macro
+
+\define xlist-published(tag)
+<<xlist
+groups: "[tag[$tag$]sort[title]]"
+template: [[$:/.tb/templates/xlist-published]]
+sort:"[!sort[published]]">>
+\end

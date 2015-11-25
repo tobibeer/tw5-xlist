@@ -1,0 +1,22 @@
+created: 20150114234416137
+creator: Tobias Beer
+modified: 20151124162018336
+modifier: Tobias Beer
+tags: 
+title: 2DO
+type: text/vnd.tiddlywiki
+
+!! Done
+
+; Dave Gifford's request
+: [[Cross-indexing By 4 different Criteria — Using Fields|https://groups.google.com/d/msg/tiddlywiki/Jy4-aOoEi5U/Dt9VxPPWFf0J]]
+: http://giffmex.org/experiments/history.crossindexing.html
+: https://groups.google.com/d/msg/tiddlywiki/Jy4-aOoEi5U/uWDn3qvKNuAJ
+<<<
+# a tag-category by other category-tags
+#* this is the only one ''xlist'' currently does
+# a field-category by category-tags
+# a tag-category by category-fields
+# a field-category by other category-fields
+#* this seems to be what ''Giffmex'' is after
+<<<

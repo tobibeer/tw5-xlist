@@ -1,0 +1,10 @@
+created: 20150116021330134
+creator: Tobias Beer
+default: `[all[current]tagging[]]` — tiddlers with the current tiddler as a tag
+modified: 20151124102536365
+modifier: Tobias Beer
+summary: a filter defining what tiddlers to match
+tags: Parameters
+title: filter
+type: text/vnd.tiddlywiki
+

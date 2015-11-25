@@ -1,0 +1,10 @@
+created: 20150113093953039
+list: Economics Business
+modified: 20150116103559802
+title: Topics
+
+<<tabs
+"[all[current]tagging[]]"
+default:Economics
+state: "$:/state/tabs/xlist/topic"
+template:[[$:/.tb/templates/tab/xlist/topic]]>>

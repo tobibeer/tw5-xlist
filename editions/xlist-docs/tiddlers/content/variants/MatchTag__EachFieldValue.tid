@@ -1,0 +1,41 @@
+created: 20150115133806202
+creator: Tobias Beer
+modified: 20151124163143335
+modifier: Tobias Beer
+summary: group tiddlers: tagged with the current tiddler or matching a [[filter]] expression — by categories derived from [[each]] distinct value of a category field
+tags: Variants Examples each
+title: Match Tag — Each Field Value
+type: text/vnd.tiddlywiki
+
+You can use the ''xlist'' macro to...
+
+* [[filter]] tiddlers tagged with the ''current tiddler''
+* by grouping into categories derived from [[each]] distinct value of a category field
+
+The example below gets all tiddlers tagged [[Articles]] where the field topic matches one of the available categories for the ''topic'' field...
+
+```
+<$tiddler tiddler=Articles>
+<<xlist each:topic>>
+</$tiddler>
+```
+
+<<<
+<$tiddler tiddler=Articles>
+<<xlist each:topic>>
+</$tiddler>
+<<<
+
+This example gets all tiddlers tagged [[Economics]] where the field ''publication'' matches one of the available categories for the ''publication'' field...
+
+```
+<$tiddler tiddler=Economics>
+<<xlist each:publication>>
+</$tiddler>
+```
+
+<<<
+<$tiddler tiddler=Economics>
+<<xlist each:publication>>
+</$tiddler>
+<<<

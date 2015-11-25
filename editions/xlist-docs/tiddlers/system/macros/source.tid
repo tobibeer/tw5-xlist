@@ -1,0 +1,9 @@
+title: $:/.tb/macros/source
+tags: $:/tags/Macro
+summary: displays a link to a tiddler and its source in a codeblock
+
+\define source(source)
+[[$source$]]:
+
+<pre><$view tiddler="$source$" format="text"/></pre>
+\end

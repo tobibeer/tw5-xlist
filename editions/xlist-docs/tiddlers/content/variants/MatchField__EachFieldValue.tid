@@ -1,0 +1,33 @@
+created: 20150115131521288
+creator: Tobias Beer
+modified: 20151124162958478
+modifier: Tobias Beer
+summary: group tiddlers: matching a field value via [[filter]] — by categories derived from [[each]] distinct value of a category field
+tags: Variants Examples each filter
+title: Match Field — Each Field Value
+type: text/vnd.tiddlywiki
+
+You can use the ''xlist'' macro to...
+
+* [[filter]] tiddlers where a given field is of a defined value
+* grouped by categories derived from [[each]] distinct value of a category field
+
+The below example gets all tiddlers where the field ''topic'' is set to [[Business]] also having the ''publication'' field set to one of the available values...
+
+```
+<<xlist filter:"[topic[Business]]" each:publication>>
+```
+
+<<<
+<<xlist filter:"[topic[Business]]" each:publication>>
+<<<
+
+The next example gets all tiddlers where the field ''publication'' is set to [[Journals]] also having the ''topic'' field set to one of the available values...
+
+```
+<<xlist filter:"[publication[Journals]]" each:topic>>
+```
+
+<<<
+<<xlist filter:"[publication[Journals]]" each:topic>>
+<<<

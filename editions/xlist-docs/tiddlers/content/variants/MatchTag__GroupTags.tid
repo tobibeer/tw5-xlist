@@ -1,0 +1,16 @@
+created: 20150115133639272
+creator: Tobias Beer
+examples: [[No Parameters]] [[For Another Tiddler]] [[Tagging Instead Of List Field]] [[Custom Item Template]] [[Item Sort Order]] [[Custom Category List]]
+modified: 20151124164513666
+modifier: Tobias Beer
+summary: group tiddlers: tagged with the current tiddler or matching a [[filter]] expression — by category tags from a list [[field]] or [[groups]] filter
+tags: Variants Examples
+title: Match Tag — Group Tags
+type: text/vnd.tiddlywiki
+
+You can use the ''xlist'' macro to..
+
+* find tiddlers tagged with the current tiddler
+* grouped by category tags from a [[list]] or [[filter]] expression
+
+This is the default behavior.

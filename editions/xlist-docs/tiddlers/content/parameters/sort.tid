@@ -1,0 +1,10 @@
+created: 20150116021056272
+creator: Tobias Beer
+default: `[sort[]]` — alphabetically, ascending
+modified: 20151124103107649
+modifier: Tobias Beer
+summary: a subfilter defining how matching items are sorted
+tags: Parameters
+title: sort
+type: text/vnd.tiddlywiki
+

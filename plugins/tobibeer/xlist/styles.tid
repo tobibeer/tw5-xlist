@@ -1,0 +1,19 @@
+title: $:/plugins/tobibeer/xlist/styles
+tags: $:/tags/Stylesheet
+type: text/css
+
+.xlist{
+margin:0;
+}
+
+.xlist dt{
+font-size:1.2em;
+}
+
+.xlist dd{
+margin-left:14px;
+}
+
+.xlist dd:before{
+content: "»";padding-right:7px;
+}

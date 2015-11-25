@@ -1,0 +1,10 @@
+created: 20150204103819709
+creator: Tobias Beer
+default: `yes`
+modified: 20151124103047584
+modifier: Tobias Beer
+summary: whether to show the groups as links or not
+tags: Parameters
+title: link
+type: text/vnd.tiddlywiki
+

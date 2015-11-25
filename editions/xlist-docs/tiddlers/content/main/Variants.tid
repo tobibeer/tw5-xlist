@@ -1,0 +1,38 @@
+created: 20150116013146968
+creator: Tobias Beer
+modified: 20151124101658731
+modifier: Tobias Beer
+tags: 
+title: Variants
+type: text/vnd.tiddlywiki
+
+\define variant(tiddler)
+<$tiddler tiddler="$tiddler$">
+<$link><$view field=title/></$link><br>
+@@color:grey;//{{!!summary}}//@@
+</$tiddler>
+\end
+
+As you can relate tiddlers both via tags as well as via fields, ''xlist'' allows you to crosslist based on ''tags'' or ''fields'' in any of the four possible combinations...
+
+<table class="td-top">
+<tr>
+<th rowspan="2" colspan="2"></th>
+<th colspan="2">Group Categories</th>
+</tr>
+<tr>
+<th>Tags</th>
+<th>Field Values</th>
+</tr>
+<tr>
+<th rowspan="2">Match</th>
+<th>Tag</th>
+<td><<variant [[Match Tag — Group Tags]]>></td>
+<td><<variant [[Match Tag — Each Field Value]]>></td>
+</tr>
+<tr>
+<th>Field Value</th>
+<td><<variant [[Match Field — Group Tags]]>></td>
+<td><<variant [[Match Field — Each Field Value]]>></td>
+</tr>
+</table>

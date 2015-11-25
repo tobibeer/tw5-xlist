@@ -1,0 +1,36 @@
+created: 20150115093036275
+creator: Tobias Beer
+list: Journals Whitepapers
+modified: 20151124163029801
+modifier: Tobias Beer
+summary: group tiddlers: matching a field value via [[filter]] — by category tags from a list [[field]] or [[groups]] filter
+tags: Examples groups Variants filter
+title: Match Field — Group Tags
+type: text/vnd.tiddlywiki
+
+You can use the ''xlist'' macro to...
+
+* [[filter]] tiddlers where a field is of a defined value
+* while using tags from a category list or filter expression as [[groups]]
+
+```
+<$tiddler tiddler=Business>
+<<xlist filter:"[topic[Business]]">>
+</$tiddler>
+```
+
+<<<
+<$tiddler tiddler=Business>
+<<xlist filter:"[topic[Business]]">>
+</$tiddler>
+<<<
+
+This example is equivalent to the above, only just the categories are derived using the equivalent filter.
+
+```
+<<xlist filter:"[topic[Business]]" groups:"[list[Business]]">>
+```
+
+<<<
+<<xlist groups:"[list[Business]]" filter:"[topic[Business]]">>
+<<<

@@ -1,0 +1,11 @@
+tags: $:/tags/ViewTemplate
+title: $:/.tb/ui/ViewTemplate/menu
+list-before: $:/core/ui/ViewTemplate/title
+
+<div class="menu tc-tiddler-controls">
+<$link to="Welcome">{{$:/core/images/home-button}}</$link> ·
+[[Variants]] ·
+[[Parameters]] ·
+[[Examples]] ·
+[[Installation]]
+</div>
