@@ -1,6 +1,6 @@
 {
     "title": "$:/plugins/tobibeer/xlist",
-    "description": "Crosslists and group tiddlers with relations to two categories",
+    "description": "Group filtered tiddlers with relations to two categories in a crosslist",
     "author": "Tobias Beer",
     "version": "0.5.0",
     "core-version": ">=5.1.9",
