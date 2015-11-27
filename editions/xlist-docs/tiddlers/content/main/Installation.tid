@@ -5,4 +5,4 @@ modifier: Tobias Beer
 title: Installation
 type: text/vnd.tiddlywiki
 
-Drag into your wiki, save, reload: [[$:/plugins/tobibeer/xlist]]
+<<plugin-install xlist>>

@@ -56,7 +56,7 @@ link:"yes"
 <$reveal type=nomatch default="" text="$each$">
 <$list filter=<<xlist-groups-each>> variable=groupTiddler>
 <$set name=currentGroup value=<<xlist-group>>>
-<$list filter=<<xlist-group-one>> variable="none">
+<$list filter=<<xlist-group-one>> variable="X">
 <dt><$list filter=<<xlist-group-title>>><$reveal type="match" default="$link$" text="yes"><$link ><<currentTiddler>></$link></$reveal><$reveal type="nomatch" default="$link$" text="yes"><$view field=title/></$reveal></$list></dt>
 <$list filter=<<xlist-group-items>> template="$template$">
 <dd><$link><$view field=title/></$link></dd>
